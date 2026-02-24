@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://localhost:4100/eozlu21/team/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team</title>
+  <meta name="description" content="Cyberiad Research Group: Team members">
+  <link rel="stylesheet" href="./Team_files/main.css">
+  <link rel="canonical" href="http://localhost:4100/eozlu21/team/">
+
+
+
+</head>
+
+
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	
+    <a class="navbar-brand" href="http://localhost:4100/eozlu21/">Cyberiad Research Group @ Koç University</a>
+	</div>
+	<div class="collapse navbar-collapse" id="navbar-collapse-1">
+	  <ul class="nav navbar-nav navbar-right">
+		<li><a href="http://localhost:4100/eozlu21/">Home</a></li>
+		<li><a href="http://localhost:4100/eozlu21/team">Team</a></li>
+		<li><a href="http://localhost:4100/eozlu21/vacancies">Vacancies</a></li>
+		<li><a href="http://localhost:4100/eozlu21/publications">Publications</a></li>
+		<li><a href="http://localhost:4100/eozlu21/research">Research</a></li>
+	<!-- li><a href="http://localhost:4100/eozlu21/pictures">(Pics)</a></li> -->	
+	  </ul>
+	</div>
+  </div>
+</div>
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./Team_files/css2" rel="stylesheet">
+
+<style>
+  #team-page {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #1a1a2e;
+    padding: 0 8px;
+  }
+
+  .team-section {
+    margin-bottom: 88px;
+  }
+
+  .team-section__title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+    padding-bottom: 16px;
+    position: relative;
+  }
+
+  .team-section__title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 68px;
+    height: 4px;
+    background: linear-gradient(135deg, #337ab7 0%, #265a88 100%);
+    border-radius: 2px;
+  }
+
+  .team-section__subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 12px;
+    margin-bottom: 36px;
+  }
+
+  /* ── Page Hero ──────────────────────────────────────────── */
+  .team-hero {
+    text-align: center;
+    padding: 64px 0 56px;
+    margin-bottom: 24px;
+  }
+
+  .team-hero__title {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+  }
+
+  .team-hero__accent {
+    background: linear-gradient(135deg, #337ab7 0%, #265a88 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .team-hero__description {
+    font-size: 1.3rem;
+    color: #6b7280;
+    max-width: 680px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  /* ── Sticky Section Nav ─────────────────────────────────── */
+  .team-nav {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 56px;
+    padding: 20px 0;
+  }
+
+  .team-nav__link {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #337ab7;
+    background: rgba(51, 122, 183, 0.08);
+    border: 1px solid rgba(51, 122, 183, 0.15);
+    border-radius: 24px;
+    text-decoration: none;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    letter-spacing: 0.01em;
+  }
+
+  .team-nav__link:hover,
+  .team-nav__link:focus {
+    background: linear-gradient(135deg, #337ab7 0%, #265a88 100%);
+    color: #fff;
+    border-color: transparent;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(51, 122, 183, 0.3);
+    text-decoration: none;
+  }
+
+  /* ── Card Grid ──────────────────────────────────────────── */
+  .team-grid {
+    display: grid;
+    gap: 32px;
+  }
+
+  .team-grid--pi {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid--member {
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  }
+
+  .team-grid--alumni {
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 28px;
+  }
+
+
+  .team-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+    padding: 40px 34px;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .team-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, #337ab7 0%, #265a88 100%);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+  }
+
+  .team-card:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 12px 28px rgba(0, 0, 0, 0.08),
+      0 4px 10px rgba(0, 0, 0, 0.04);
+    border-color: rgba(51, 122, 183, 0.15);
+  }
+
+  .team-card:hover::before {
+    opacity: 1;
+  }
+
+  .team-card--pi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 44px 40px;
+    background: linear-gradient(135deg, #fafbff 0%, #f8f6ff 100%);
+    border: 1px solid rgba(51, 122, 183, 0.1);
+  }
+
+  .team-card--pi .team-card__photo-wrap {
+    margin-bottom: 24px;
+  }
+
+  .team-card--pi .team-card__photo {
+    width: 170px;
+    height: 170px;
+  }
+
+  .team-card--pi .team-card__name {
+    font-size: 1.65rem;
+  }
+
+  /* ── Card — Alumni Variant ──────────────────────────────── */
+  .team-card--alumni {
+    padding: 28px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .team-card--alumni .team-card__photo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .team-card--alumni .team-card__name {
+    font-size: 1.15rem;
+    margin-bottom: 5px;
+  }
+
+  .team-card--alumni .team-card__role {
+    font-size: 1rem;
+  }
+
+  /* ── Card Photo ─────────────────────────────────────────── */
+  .team-card__photo-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22px;
+  }
+
+  .team-card__photo {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow:
+      0 2px 8px rgba(0, 0, 0, 0.08),
+      0 0 0 1px rgba(51, 122, 183, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0;
+  }
+
+  .team-card:hover .team-card__photo {
+    transform: scale(1.04);
+    box-shadow:
+      0 4px 14px rgba(51, 122, 183, 0.2),
+      0 0 0 2px rgba(51, 122, 183, 0.2);
+  }
+
+  /* ── Card Content ───────────────────────────────────────── */
+  .team-card__body {
+    text-align: center;
+  }
+
+  .team-card--alumni .team-card__body {
+    text-align: left;
+  }
+
+  .team-card__name {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+  }
+
+  .team-card__role {
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: #337ab7;
+    margin-bottom: 16px;
+  }
+
+  .team-card__education {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .team-card__education li {
+    font-size: 1rem;
+    color: #4b5563;
+    line-height: 1.6;
+    padding: 6px 0 6px 18px;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .team-card__education li:last-child {
+    border-bottom: none;
+  }
+
+  .team-card__education li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #337ab7;
+  }
+
+  .team-card--pi .team-card__affiliations {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .team-card--pi .team-card__affiliation {
+    padding: 8px 0 8px 18px;
+    margin-bottom: 4px;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .team-card--pi .team-card__affiliation:last-child {
+    border-bottom: none;
+  }
+
+  .team-card--pi .team-card__affiliation::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #337ab7;
+  }
+
+  .team-card--pi .team-card__affiliation-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+  }
+
+  .team-card--pi .team-card__affiliation-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1a1a2e;
+  }
+
+  .team-card--pi .team-card__affiliation-dates {
+    font-size: 0.9rem;
+    color: #6b7280;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .team-card--pi .team-card__affiliation-inst {
+    font-size: 0.95rem;
+    color: #4b5563;
+    margin-top: 2px;
+  }
+
+  .team-card--pi .team-card__affiliation-note {
+    font-size: 0.88rem;
+    color: #6b7280;
+    font-style: italic;
+    margin-top: 2px;
+  }
+
+  .team-card__education a {
+    color: #337ab7;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .team-card__education a:hover {
+    color: #265a88;
+  }
+
+
+  .team-card__links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 18px;
+  }
+
+  .team-card--alumni .team-card__links {
+    justify-content: flex-start;
+  }
+
+  .team-card__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    color: #9ca3af;
+    background: rgba(0, 0, 0, 0.03);
+    transition: all 0.25s ease;
+    text-decoration: none;
+  }
+
+  .team-card__link:hover {
+    color: #fff;
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+
+  .team-card__link--scholar:hover {
+    background: #4285f4;
+    box-shadow: 0 4px 12px rgba(66, 133, 244, 0.35);
+  }
+
+  .team-card__link--orcid:hover {
+    background: #a6ce39;
+    box-shadow: 0 4px 12px rgba(166, 206, 57, 0.35);
+  }
+
+  .team-card__link--linkedin:hover {
+    background: #0077b5;
+    box-shadow: 0 4px 12px rgba(0, 119, 181, 0.35);
+  }
+
+  .team-card__link--website:hover {
+    background: linear-gradient(135deg, #337ab7, #265a88);
+    box-shadow: 0 4px 12px rgba(51, 122, 183, 0.35);
+  }
+
+  .team-card__link--email:hover {
+    background: #ea4335;
+    box-shadow: 0 4px 12px rgba(234, 67, 53, 0.35);
+  }
+
+  .team-card__link svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+
+  /* ── Alumni Compact List ────────────────────────────────── */
+  .alumni-list {
+    margin-top: 16px;
+  }
+
+  .alumni-list__heading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 16px;
+  }
+
+  .alumni-list__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .alumni-list__item {
+    font-size: 1rem;
+    color: #4b5563;
+    padding: 12px 18px;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 10px;
+    transition: background 0.2s ease;
+  }
+
+  .alumni-list__item:hover {
+    background: rgba(51, 122, 183, 0.06);
+  }
+
+  /* ── Separator ──────────────────────────────────────────── */
+  .team-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(51, 122, 183, 0.15), transparent);
+    margin: 56px 0;
+  }
+
+  /* ── Responsive ─────────────────────────────────────────── */
+  @media (max-width: 768px) {
+    .team-hero__title {
+      font-size: 1.8rem;
+    }
+
+
+
+
+    .team-grid--pi {
+      grid-template-columns: 1fr;
+    }
+
+    .team-grid--member {
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+
+    .team-grid--alumni {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .team-nav {
+      gap: 6px;
+    }
+
+    .team-nav__link {
+      padding: 6px 14px;
+      font-size: 0.78rem;
+    }
+
+    .team-card {
+      padding: 20px 16px;
+    }
+  }
+</style>
+
+<div id="team-page" class="col-sm-12">
+
+
+  <hr class="team-divider">
+
+  <!-- PRINCIPAL INVESTIGATORS -->
+  <section id="principal-investigators" class="team-section">
+    <h2 class="team-section__title">PIs</h2>
+    <div class="team-grid team-grid--pi">
+      
+      <div class="team-card team-card--pi">
+        <div class="team-card__photo-wrap">
+          <img src="./Team_files/aerdem.jpg" alt="Aykut Erdem" class="team-card__photo" loading="lazy">
+        </div>
+        <div class="team-card__body">
+          <h3 class="team-card__name">Aykut Erdem</h3>
+          <p class="team-card__role">Associate Professor</p>
+          
+          <div class="team-card__affiliations">
+            
+            <div class="team-card__affiliation">
+              <div class="team-card__affiliation-row">
+                <span class="team-card__affiliation-title">Department of Computer Engineering</span>
+                <span class="team-card__affiliation-dates">2020 – Present</span>
+              </div>
+              <div class="team-card__affiliation-inst">Koç University, Istanbul, TR</div>
+              <div class="team-card__affiliation-note">co-affiliated with KUIS AI Center</div>
+            </div>
+            
+            <div class="team-card__affiliation">
+              <div class="team-card__affiliation-row">
+                <span class="team-card__affiliation-title">Department of Computer Engineering</span>
+                <span class="team-card__affiliation-dates">2011 – 2020</span>
+              </div>
+              <div class="team-card__affiliation-inst">Hacettepe University, Ankara, TR</div>
+              
+            </div>
+            
+          </div>
+          
+          <div class="team-card__links">
+            <a href="https://aykuterdem.github.io/" class="team-card__link team-card__link--website" title="Website" target="_blank" rel="noopener"><svg viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"></path>
+              </svg></a>
+            <a href="https://scholar.google.com/citations?user=-xA1_OAAAAAJ&amp;hl=en" class="team-card__link team-card__link--scholar" title="Google Scholar" target="_blank" rel="noopener"><svg viewBox="0 0 24 24">
+                <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"></path>
+              </svg></a>
+            <a href="https://orcid.org/0000-0002-6280-8422" class="team-card__link team-card__link--orcid" title="ORCID" target="_blank" rel="noopener"><svg viewBox="0 0 24 24">
+                <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-1.847-1.178-3.722-3.953-3.722h-2.366z"></path>
+              </svg></a>
+            
+            <a href="mailto:aerdem@ku.edu.tr" class="team-card__link team-card__link--email" title="Email"><svg viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
+              </svg></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="team-card team-card--pi">
+        <div class="team-card__photo-wrap">
+          <img src="./Team_files/eerdem.png" alt="Erkut Erdem" class="team-card__photo" loading="lazy">
+        </div>
+        <div class="team-card__body">
+          <h3 class="team-card__name">Erkut Erdem</h3>
+          <p class="team-card__role">Associate Professor</p>
+          
+          <div class="team-card__affiliations">
+            
+            <div class="team-card__affiliation">
+              <div class="team-card__affiliation-row">
+                <span class="team-card__affiliation-title">Department of Computer Engineering</span>
+                <span class="team-card__affiliation-dates">2010 – Present</span>
+              </div>
+              <div class="team-card__affiliation-inst">Hacettepe University</div>
+              <div class="team-card__affiliation-note">co-affiliated with KUIS AI Center</div>
+            </div>
+            
+          </div>
+          
+          <div class="team-card__links">
+            <a href="https://web.cs.hacettepe.edu.tr/~erkut/" class="team-card__link team-card__link--website" title="Website" target="_blank" rel="noopener"><svg viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"></path>
+              </svg></a>
+            <a href="https://scholar.google.com.tr/citations?user=eALwl74AAAAJ" class="team-card__link team-card__link--scholar" title="Google Scholar" target="_blank" rel="noopener"><svg viewBox="0 0 24 24">
+                <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"></path>
+              </svg></a>
+            <a href="https://orcid.org/0000-0002-6744-8614" class="team-card__link team-card__link--orcid" title="ORCID" target="_blank" rel="noopener"><svg viewBox="0 0 24 24">
+                <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-1.847-1.178-3.722-3.953-3.722h-2.366z"></path>
+              </svg></a>
+            
+            <a href="mailto:erkut@cs.hacettepe.edu.tr" class="team-card__link team-card__link--email" title="Email"><svg viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
+              </svg></a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+
+  <hr class="team-divider">
+  <!-- PHD STUDENTS -->
+  <section id="phd-students" class="team-section">
+    <h2 class="team-section__title">PhD Students</h2>
+    <div class="team-grid team-grid--member">
+      
+      <div class="team-card">
+        <div class="team-card__photo-wrap">
+          <img src="./Team_files/saved_resource" alt="Andrew Bond" class="team-card__photo" loading="lazy">
+        </div>
+        <div class="team-card__body">
+          <h3 class="team-card__name">Andrew Bond</h3>
+          <p class="team-card__role">Research Fellow @ KUIS AI Center</p>
+          <ul class="team-card__education">
+            <li>PhD, Computer Science, Koç University</li>
+            <li>BSc, Computer Engineering, Koç University</li>
+            
+          </ul>
+          <div class="team-card__links">
+            <a href="https://abond19.github.io/" class="team-card__link team-card__link--website" title="Website" target="_blank" rel="noopener"><svg viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"></path>
+              </svg></a>
+            <a href="https://scholar.google.com/citations?user=tcga9tUAAAAJ" class="team-card__link team-card__link--scholar" title="Google Scholar" target="_blank" rel="noopener"><svg viewBox="0 0 24 24">
+                <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"></path>
+              </svg></a>
+            <a href="https://orcid.org/0000-0002-6556-5331" class="team-card__link team-card__link--orcid" title="ORCID" target="_blank" rel="noopener"><svg viewBox="0 0 24 24">
+                <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-1.847-1.178-3.722-3.953-3.722h-2.366z"></path>
+              </svg></a>
+            
+            <a href="mailto:abond19@ku.edu.tr" class="team-card__link team-card__link--email" title="Email"><svg viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
+              </svg></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="team-card">
+        <div class="team-card__photo-wrap">
+          <img src="./Team_files/saved_resource" alt="Hakan Capuk" class="team-card__photo" loading="lazy">
+        </div>
+        <div class="team-card__body">
+          <h3 class="team-card__name">Hakan Capuk</h3>
+          <p class="team-card__role">PhD Student</p>
+          <ul class="team-card__education">
+            
+            
+            
+          </ul>
+          <div class="team-card__links">
+            
+            
+            
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="team-card">
+        <div class="team-card__photo-wrap">
+          <img src="./Team_files/saved_resource" alt="Ismail Cetin" class="team-card__photo" loading="lazy">
+        </div>
+        <div class="team-card__body">
+          <h3 class="team-card__name">Ismail Cetin</h3>
+          <p class="team-card__role">PhD Student</p>
+          <ul class="team-card__education">
+            
+            
+            
+          </ul>
+          <div class="team-card__links">
+            
+            
+            
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="team-card">
+        <div class="team-card__photo-wrap">
+          <img src="./Team_files/saved_resource" alt="Muhammed Burak Kizil" class="team-card__photo" loading="lazy">
+        </div>
+        <div class="team-card__body">
+          <h3 class="team-card__name">Muhammed Burak Kizil</h3>
+          <p class="team-card__role">PhD Student</p>
+          <ul class="team-card__education">
+            
+            
+            
+          </ul>
+          <div class="team-card__links">
+            
+            
+            
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="team-card">
+        <div class="team-card__photo-wrap">
+          <img src="./Team_files/saved_resource" alt="Ali Kerem Ozturk" class="team-card__photo" loading="lazy">
+        </div>
+        <div class="team-card__body">
+          <h3 class="team-card__name">Ali Kerem Ozturk</h3>
+          <p class="team-card__role">PhD Student</p>
+          <ul class="team-card__education">
+            
+            
+            
+          </ul>
+          <div class="team-card__links">
+            
+            
+            
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="team-card">
+        <div class="team-card__photo-wrap">
+          <img src="./Team_files/saved_resource" alt="Enes Sanli" class="team-card__photo" loading="lazy">
+        </div>
+        <div class="team-card__body">
+          <h3 class="team-card__name">Enes Sanli</h3>
+          <p class="team-card__role">PhD Student</p>
+          <ul class="team-card__education">
+            
+            
+            
+          </ul>
+          <div class="team-card__links">
+            
+            
+            
+            
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <hr class="team-divider">
+
+  <!-- MSC STUDENTS -->
+  <section id="msc-students" class="team-section">
+    <h2 class="team-section__title">MSc Students</h2>
+    <div class="team-grid team-grid--member">
+      
+      <div class="team-card">
+        <div class="team-card__photo-wrap">
+          <img src="./Team_files/ybayindir23.jpg" alt="Yusuf Bayindir" class="team-card__photo" loading="lazy">
+        </div>
+        <div class="team-card__body">
+          <h3 class="team-card__name">Yusuf Bayindir</h3>
+          <p class="team-card__role">Research Fellow @ KUIS AI Center</p>
+          <ul class="team-card__education">
+            <li>MSc, Computer Science, Koç University</li>
+            <li>BSc, Computer Engineering &amp; Physics, Bogazici University</li>
+          </ul>
+          <div class="team-card__links">
+            
+            
+            
+            <a href="mailto:ybayindir23@ku.edu.tr" class="team-card__link team-card__link--email" title="Email"><svg viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
+              </svg></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="team-card">
+        <div class="team-card__photo-wrap">
+          <img src="./Team_files/saved_resource" alt="Deniz Bilge Akkoc" class="team-card__photo" loading="lazy">
+        </div>
+        <div class="team-card__body">
+          <h3 class="team-card__name">Deniz Bilge Akkoc</h3>
+          <p class="team-card__role">MSc Student</p>
+          <ul class="team-card__education">
+            
+            
+          </ul>
+          <div class="team-card__links">
+            
+            
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="team-card">
+        <div class="team-card__photo-wrap">
+          <img src="./Team_files/saved_resource" alt="Doga Kukul" class="team-card__photo" loading="lazy">
+        </div>
+        <div class="team-card__body">
+          <h3 class="team-card__name">Doga Kukul</h3>
+          <p class="team-card__role">MSc Student</p>
+          <ul class="team-card__education">
+            
+            
+          </ul>
+          <div class="team-card__links">
+            
+            
+            
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="team-card">
+        <div class="team-card__photo-wrap">
+          <img src="./Team_files/saved_resource" alt="Merve Vural" class="team-card__photo" loading="lazy">
+        </div>
+        <div class="team-card__body">
+          <h3 class="team-card__name">Merve Vural</h3>
+          <p class="team-card__role">MSc Student</p>
+          <ul class="team-card__education">
+            
+            
+          </ul>
+          <div class="team-card__links">
+            
+            
+            
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <hr class="team-divider">
+
+  <!-- ALUMNI -->
+  <section id="alumni" class="team-section">
+    <h2 class="team-section__title">Alumni</h2>
+    <div class="team-grid team-grid--alumni">
+      
+      <div class="team-card team-card--alumni">
+        <div class="team-card__photo-wrap" style="margin-bottom: 0;">
+          <img src="./Team_files/verdoes.jpg" alt="Gijsbert Verdoes" class="team-card__photo" loading="lazy">
+        </div>
+        <div class="team-card__body">
+          <h3 class="team-card__name">Gijsbert Verdoes</h3>
+          <p class="team-card__role">Fine mechanical engineer associated with the FMD working in our group · In the Allan Lab 2015 - 2018, now Project manager at the FMD</p>
+        </div>
+      </div>
+      
+    </div>
+
+    <hr class="team-divider">
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="alumni-list">
+          <h4 class="alumni-list__heading">Former Visitors</h4>
+          <div class="alumni-list__grid">
+            
+            <div class="alumni-list__item">Nikolaos Iliopoulos, Spring 2016</div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="alumni-list">
+          <h4 class="alumni-list__heading">MSc Alumni</h4>
+          <div class="alumni-list__grid">
+            
+            <div class="alumni-list__item">Maarten Leeuwenhoek, Spring 2015</div>
+            
+            <div class="alumni-list__item">Koen M Bastiaans, Spring 2015</div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="alumni-list">
+          <h4 class="alumni-list__heading">BSc Alumni</h4>
+          <div class="alumni-list__grid">
+            
+            <div class="alumni-list__item">Vishnu Saj (IIT), Spring 2017</div>
+            
+            <div class="alumni-list__item">Arjo Andringa, Spring 2016</div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+      </div>
+    </div>
+
+    <div id="footer" class="panel">
+  <div class="panel-footer">
+	<div class="container-fluid">
+	  <div class="row">
+		<div class="col-sm-4">
+
+		  <p>© 2016 Allan Lab. Site made with <a href="https://jekyllrb.com/">Jekyll</a>;  <a href="http://localhost:4100/eozlu21/aboutwebsite.html">copy and  modify it for your own research group.</a></p>
+              
+
+
+		   <p>  </p><p>
+
+
+		</p></div>
+		<div class="col-sm-4">
+		<p>We are part of the <a href="https://www.physik.lmu.de/en//">Faculty of Physics</a> at the<a href="https://www.lmu.de/"> University of Munich (LMU)</a>. We are still associated with the <a href="https://www.physics.leidenuniv.nl/">Leiden Institute of Physics</a>, where most of our instrument are.</p>
+		</div>
+		<div class="col-sm-4">
+		  Contact:<br>
+Geschwister-Scholl-Platz 1<br>
+		  80539 München<br>
+		  Germany <br>
+		</div>
+	  </div>
+	</div>
+  </div>
+</div>
+
+<script src="./Team_files/jquery.min.js"></script>
+<script src="./Team_files/bootstrap.min.js"></script>
+
+
+  
+
+
+</body></html>
