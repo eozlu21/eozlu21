@@ -2,10 +2,122 @@
 #  photo: rock.jpg
 #  info:
 #  email:
-#  number_educ:
+#  number_educ: 2
 #  education1:
 #  education2:
 #  education3:
 #  education4:
 
+- name: Andrew Bond
+  photo: 
+  info: PhD Student
+  role: phd
+  email: ""
+  website: ""
+  scholar: ""
+  orcid: ""
+  linkedin: ""
+  number_educ: 0
 
+- name: Hakan Capuk
+  photo: 
+  info: PhD Student
+  role: phd
+  email: ""
+  website: ""
+  scholar: ""
+  orcid: ""
+  linkedin: ""
+  number_educ: 0
+
+- name: Ismail Cetin
+  photo: 
+  info: PhD Student
+  role: phd
+  email: ""
+  website: ""
+  scholar: ""
+  orcid: ""
+  linkedin: ""
+  number_educ: 0
+
+- name: Muhammed Burak Kizil
+  photo: 
+  info: PhD Student
+  role: phd
+  email: ""
+  website: ""
+  scholar: ""
+  orcid: ""
+  linkedin: ""
+  number_educ: 0
+
+- name: Ali Kerem Ozturk
+  photo: 
+  info: PhD Student
+  role: phd
+  email: ""
+  website: ""
+  scholar: ""
+  orcid: ""
+  linkedin: ""
+  number_educ: 0
+
+- name: Enes Sanli
+  photo: 
+  info: PhD Student
+  role: phd
+  email: ""
+  website: ""
+  scholar: ""
+  orcid: ""
+  linkedin: ""
+  number_educ: 2
+  education1: PhD, Computer Science, Koç University
+  education2: BSc, Computer Engineering, Middle East Technical University
+
+- name: Yusuf Bayindir
+  photo: ybayindir23.jpg
+  info: Research Fellow @ KUIS AI Center
+  role: msc
+  email: ybayindir23@ku.edu.tr
+  website: ""
+  scholar: ""
+  orcid: ""
+  linkedin: ""
+  number_educ: 2
+  education1: MSc, Computer Science, Koç University
+  education2: BSc, Computer Engineering & Physics, Bogazici University
+
+- name: Deniz Bilge Akkoc
+  photo: 
+  info: MSc Student
+  role: msc
+  email: ""
+  website: ""
+  scholar: ""
+  orcid: ""
+  linkedin: ""
+  number_educ: 0
+
+- name: Doga Kukul
+  photo: 
+  info: MSc Student
+  role: msc
+  email: ""
+  website: ""
+  scholar: ""
+  orcid: ""
+  linkedin: ""
+  number_educ: 0
+
+- name: Merve Vural
+  photo: 
+  info: MSc Student
+  role: msc
+  email: ""
+  website: ""
+  scholar: ""
+  orcid: ""
+  linkedin: ""
+  number_educ: 0

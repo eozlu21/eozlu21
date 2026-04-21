@@ -2,16 +2,15 @@
 // Bootswatch
 // -----------------------------------------------------
 
-$web-font-path: "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic" !default;
-@import url($web-font-path);
+// Fonts are loaded locally via @font-face in main.scss
 
-@mixin shadow($width: 4px){
+@mixin shadow($width: 4px) {
   border-width: 0 1px $width 1px;
 }
 
 // Navbar =====================================================================
 
-.navbar  {
+.navbar {
   @include shadow();
 }
 
@@ -36,18 +35,18 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400
   }
 
   &-lg,
-  &-group-lg > .btn {
+  &-group-lg>.btn {
     padding: ($padding-large-vertical + 2) $padding-large-horizontal $padding-large-vertical;
     line-height: 15px;
   }
 
   &-sm,
-  &-group-sm > .btn {
+  &-group-sm>.btn {
     padding: ($padding-small-vertical + 2) $padding-small-horizontal $padding-small-vertical;
   }
 
   &-xs,
-  &-group-xs > .btn {
+  &-group-xs>.btn {
     padding: ($padding-xs-vertical + 2) $padding-xs-horizontal $padding-xs-vertical;
   }
 
@@ -129,7 +128,7 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400
 }
 
 .btn-group-vertical {
-  .btn + .btn {
+  .btn+.btn {
     &:hover {
       border-top-width: 1px;
     }
@@ -192,12 +191,13 @@ table,
   }
 
   &:not(.table-bordered) {
-    > thead > tr > th,
-    > tbody > tr > th,
-    > tfoot > tr > th,
-    > thead > tr > td,
-    > tbody > tr > td,
-    > tfoot > tr > td {
+
+    >thead>tr>th,
+    >tbody>tr>th,
+    >tfoot>tr>th,
+    >thead>tr>td,
+    >tbody>tr>td,
+    >tfoot>tr>td {
       border-color: transparent;
     }
   }
@@ -214,6 +214,7 @@ label {
 }
 
 .has-warning {
+
   .help-block,
   .control-label,
   .radio,
@@ -240,6 +241,7 @@ label {
 }
 
 .has-error {
+
   .help-block,
   .control-label,
   .radio,
@@ -266,6 +268,7 @@ label {
 }
 
 .has-success {
+
   .help-block,
   .control-label,
   .radio,
@@ -294,48 +297,49 @@ label {
 // Navs =======================================================================
 
 .nav {
-  .open > a,
-  .open > a:hover,
-  .open > a:focus {
+
+  .open>a,
+  .open>a:hover,
+  .open>a:focus {
     border-color: transparent;
   }
 }
 
 .nav-tabs {
 
-  > li > a {
+  >li>a {
     margin-top: 6px;
     border-color: $navbar-default-border;
     color: $gray-dark;
     @include transition(all 0.2s ease-in-out);
   }
 
-  > li > a:hover,
-  > li > a:focus,
-  > li.active > a,
-  > li.active > a:hover,
-  > li.active > a:focus,
-  .open > a,
-  .open > a:hover,
-  .open > a:focus {
+  >li>a:hover,
+  >li>a:focus,
+  >li.active>a,
+  >li.active>a:hover,
+  >li.active>a:focus,
+  .open>a,
+  .open>a:hover,
+  .open>a:focus {
     padding-bottom: ($padding-large-vertical + 3);
     margin-top: 0;
   }
 
-  .open > a,
-  .open > a:hover,
-  .open > a:focus {
+  .open>a,
+  .open>a:hover,
+  .open>a:focus {
     border-color: $navbar-default-border;
   }
 
-  > li.disabled > a:hover,
-  > li.disabled > a:focus {
+  >li.disabled>a:hover,
+  >li.disabled>a:focus {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 6px;
   }
 
-  &.nav-justified > li {
+  &.nav-justified>li {
     vertical-align: bottom;
   }
 }
@@ -356,8 +360,8 @@ label {
 .pagination,
 .pager {
 
-  > li > a,
-  > li > span {
+  >li>a,
+  >li>span {
     position: relative;
     top: 0;
     @include shadow();
@@ -377,8 +381,8 @@ label {
     }
   }
 
-  > .disabled > a,
-  > .disabled > span {
+  >.disabled>a,
+  >.disabled>span {
 
     &:hover {
       top: 0;
@@ -394,10 +398,10 @@ label {
 
 .pager {
 
-  > li > a,
-  > li > span,
-  > .disabled > a,
-  > .disabled > span {
+  >li>a,
+  >li>span,
+  >.disabled>a,
+  >.disabled>span {
 
     &,
     &:hover,
@@ -477,7 +481,7 @@ a.list-group-item {
     &.active {
       background-color: $state-warning-bg;
     }
-    
+
     &.active:hover,
     &.active:focus {
       background-color: darken($state-warning-bg, 5%);
@@ -488,7 +492,7 @@ a.list-group-item {
     &.active {
       background-color: $state-danger-bg;
     }
-    
+
     &.active:hover,
     &.active:focus {
       background-color: darken($state-danger-bg, 5%);
