@@ -1,5 +1,6 @@
----
----
+--- 
+--- 
+
 @font-face {
 	font-family: 'SuisseIntl';
 	src: url('../fonts/SuisseIntl-Light.ttf') format('truetype');
@@ -249,118 +250,9 @@ pubtit {
 	margin-right: 30px;
 }
 
-<<<<<<< Updated upstream
-/* Publications page */
-
-.pub-year-section {
-    margin-bottom: 10px;
-}
-
-.pub-year-heading {
-    font-size: 28px;
-    font-weight: 700;
-    padding-bottom: 8px;
-    border-bottom: 2px solid #ddd;
-    margin-bottom: 20px;
-    margin-top: 30px;
-}
-
-.pub-entry {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin-bottom: 22px;
-    padding-bottom: 18px;
-    border-bottom: 1px solid #eee;
-}
-
-.pub-entry:last-child {
-    border-bottom: none;
-}
-
-.pub-img {
-    flex-shrink: 0;
-    width: 150px;
-    margin-right: 20px;
-}
-
-.pub-img img {
-    width: 150px;
-    height: auto;
-    border-radius: 6%;
-    box-shadow: 2px 2px 5px #888888;
-    margin: 0;
-}
-
-.pub-text {
-    flex: 1;
-}
-
-.pub-title {
-    font-weight: bold;
-    font-size: 15px;
-    margin-bottom: 4px;
-    line-height: 1.4;
-}
-
-.pub-authors {
-    font-size: 13px;
-    color: #333;
-    margin-bottom: 3px;
-}
-
-.pub-venue {
-    font-size: 13px;
-    font-style: italic;
-    color: #555;
-    margin-bottom: 6px;
-}
-
-.pub-links {
-    margin-top: 4px;
-}
-
-.pub-links a {
-    text-decoration: none;
-    margin-right: 6px;
-}
-
-.pub-link-btn {
-    display: inline-block;
-    padding: 2px 8px;
-    font-size: 12px;
-    border: 1px solid #999;
-    border-radius: 3px;
-    color: #333;
-    background: #f8f8f8;
-    transition: background 0.15s, color 0.15s;
-}
-
-.pub-link-btn:hover {
-    background: #333;
-    color: #fff;
-    border-color: #333;
-}
-
-@media (max-width: 600px) {
-    .pub-entry {
-        flex-direction: column;
-    }
-    .pub-img {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-    .pub-img img {
-        width: 120px;
-    }
-}
-
-=======
 /* Footer */
 #footer .panel-footer {
 	background: #F9F9F7;
 	border-top: 1px solid rgba(0, 0, 0, 0.06);
 	color: #707070;
 }
->>>>>>> Stashed changes
