@@ -15,29 +15,33 @@ layout: default
 <div class="pub-year-section">
   <h2 class="pub-year-heading">{{ year }}</h2>
 
-  {% for publi in year_pubs %}
-  <div class="pub-entry">
-    <div class="pub-img">
-      {% if publi.image %}
-      <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" alt="{{ publi.title }}" />
-      {% else %}
-      <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/placeholder.png" alt="placeholder" />
-      {% endif %}
-    </div>
-    <div class="pub-text">
-      <div class="pub-title">{{ publi.title }}</div>
-      <div class="pub-authors">{{ publi.authors }}</div>
-      <div class="pub-venue">{{ publi.venue }}</div>
-      <div class="pub-links">
-        {% if publi.arxiv %}<a href="{{ publi.arxiv }}" target="_blank"><span class="pub-link-btn">arXiv</span></a>{% endif %}
-        {% if publi.pdf %}<a href="{{ publi.pdf }}" target="_blank"><span class="pub-link-btn">PDF</span></a>{% endif %}
-        {% if publi.code %}<a href="{{ publi.code }}" target="_blank"><span class="pub-link-btn">Code</span></a>{% endif %}
-        {% if publi.project %}<a href="{{ publi.project }}" target="_blank"><span class="pub-link-btn">Project</span></a>{% endif %}
-        {% if publi.video %}<a href="{{ publi.video }}" target="_blank"><span class="pub-link-btn">Video</span></a>{% endif %}
+  <div class="row pub-year-grid">
+    {% for publi in year_pubs %}
+    <div class="col-sm-6">
+      <div class="pub-card">
+        <div class="pub-img">
+          {% if publi.image %}
+          <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" alt="{{ publi.title }}" />
+          {% else %}
+          <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/placeholder.png" alt="placeholder" />
+          {% endif %}
+        </div>
+        <div class="pub-text">
+          <div class="pub-title">{{ publi.title }}</div>
+          <div class="pub-authors">{{ publi.authors }}</div>
+          <div class="pub-venue">{{ publi.venue }}</div>
+          <div class="pub-links">
+            {% if publi.arxiv %}<a href="{{ publi.arxiv }}" target="_blank" rel="noopener"><span class="pub-link-btn">arXiv</span></a>{% endif %}
+            {% if publi.pdf %}<a href="{{ publi.pdf }}" target="_blank" rel="noopener"><span class="pub-link-btn">PDF</span></a>{% endif %}
+            {% if publi.code %}<a href="{{ publi.code }}" target="_blank" rel="noopener"><span class="pub-link-btn">Code</span></a>{% endif %}
+            {% if publi.project %}<a href="{{ publi.project }}" target="_blank" rel="noopener"><span class="pub-link-btn">Project</span></a>{% endif %}
+            {% if publi.video %}<a href="{{ publi.video }}" target="_blank" rel="noopener"><span class="pub-link-btn">Video</span></a>{% endif %}
+          </div>
+        </div>
       </div>
     </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>
 
 {% endif %}

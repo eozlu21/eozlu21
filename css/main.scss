@@ -204,6 +204,114 @@ pubtit {
 	box-shadow: 2px 2px 5px #888888;
 }
 
+/* Publications (2-column boxed cards) */
+.pub-year-section {
+	margin-top: 28px;
+	margin-bottom: 18px;
+}
+
+.pub-year-heading {
+	margin-top: 18px;
+	margin-bottom: 18px;
+}
+
+.pub-year-grid {
+	margin-left: -8px;
+	margin-right: -8px;
+}
+
+.pub-year-grid > [class^="col-"] {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.pub-card {
+	background: #ffffff;
+	border: 1px solid rgba(0, 0, 0, 0.06);
+	border-radius: 14px;
+	padding: 16px;
+	margin-bottom: 16px;
+	display: flex;
+	gap: 14px;
+	align-items: flex-start;
+}
+
+.pub-card .pub-img {
+	flex: 0 0 110px;
+}
+
+#gridid .pub-card .pub-img img {
+	width: 110px;
+	max-width: 110px;
+	height: auto;
+	margin: 0;
+	border-radius: 10px;
+	box-shadow: none;
+}
+
+.pub-card .pub-text {
+	flex: 1;
+	min-width: 0;
+}
+
+.pub-title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.25;
+	margin-bottom: 6px;
+}
+
+.pub-authors {
+	color: #4b5563;
+	font-size: 13px;
+	line-height: 1.45;
+	margin-bottom: 6px;
+}
+
+.pub-venue {
+	color: #707070;
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+
+.pub-links a {
+	text-decoration: none;
+}
+
+.pub-link-btn {
+	display: inline-block;
+	padding: 6px 10px;
+	margin-right: 6px;
+	margin-bottom: 6px;
+	border-radius: 999px;
+	background: rgba(0, 0, 0, 0.03);
+	border: 1px solid rgba(0, 0, 0, 0.06);
+	color: #337ab7;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.pub-links a:hover .pub-link-btn,
+.pub-links a:focus .pub-link-btn {
+	background: rgba(51, 122, 183, 0.08);
+	border-color: rgba(51, 122, 183, 0.18);
+}
+
+@media (max-width: 768px) {
+	.pub-card {
+		flex-direction: column;
+	}
+
+	.pub-card .pub-img {
+		flex: 0 0 auto;
+	}
+
+	#gridid .pub-card .pub-img img {
+		width: 100%;
+		max-width: 260px;
+	}
+}
+
 #homeid img {
 	margin: 0 0 0 0;
 	border-radius: 5%;

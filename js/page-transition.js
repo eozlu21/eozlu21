@@ -13,8 +13,8 @@
     var CELL_COLOR = '#E0E0DC';
     var KERN_COLOR = '#1A1A1A';
     var KERN_FILL = 'rgba(26, 26, 26, 0.15)';
-    var ANIM_SIZE = 120;       // px — total canvas display size
-    var DURATION = 300;       // ms for the convolution sweep
+    var ANIM_SIZE = 160;       // px — total canvas display size
+    var DURATION = 350;       // ms for the convolution sweep
 
     var overlay = document.getElementById('page-transition-overlay');
     if (!overlay) return;
@@ -81,8 +81,8 @@
     function drawConvolution(progress) {
         var S = ANIM_SIZE;
         var pad = 20;
-        var cellSize = (S - 2 * pad - (GRID - 1) * 6) / GRID;
-        var gap = 6;
+        var cellSize = (S - 2 * pad - (GRID - 1) * 4) / GRID;
+        var gap = 4;
         var ox = pad;
         var oy = pad;
 
