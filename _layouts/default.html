@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
 
-    {% include header.html %}
+  {% include header.html %}
 
-    <div class="container-fluid">
-      <div class="row">
-        {{ content }}
-      </div>
+  <!-- Page transition overlay (canvas injected by JS) -->
+  <div id="page-transition-overlay"></div>
+
+  <div class="container-fluid">
+    <div class="row">
+      {{ content }}
     </div>
+  </div>
 
-    {% include footer.html %}
+  {% include footer.html %}
 
-  </body>
+  <script src="{{ site.url }}{{ site.baseurl }}/js/page-transition.js"></script>
+
+</body>
 
 </html>
