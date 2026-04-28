@@ -207,28 +207,64 @@
         ctx.clearRect(0, 0, ANIM_SIZE, ANIM_SIZE);
     }
 
-    function doTransition(targetUrl) {
-        var wrap = getContentWrap();
-        var footer = document.getElementById('footer');
+    /* ── Loading indicator mode ──────────────────────────── */
+    var loadingLoopActive = false;
+    var loadingMinPassDone = false;
+    var loadingStopRequested = false;
 
-        // Step 1: slide current content down
-        slideDown(wrap);
-        if (footer) {
-            footer.style.transition = 'opacity 0.3s ease';
-            footer.style.opacity = '0';
+    function clearLoadingFlag() {
+        try { document.documentElement.classList.remove('is-loading'); } catch (e) { }
+    }
+
+    function stopLoadingLoop() {
+        if (!loadingLoopActive) return;
+        loadingLoopActive = false;
+        hideOverlay();
+        clearLoadingFlag();
+    }
+
+    function requestStopLoading() {
+        loadingStopRequested = true;
+        if (loadingMinPassDone) {
+            stopLoadingLoop();
         }
+    }
 
-        // Step 2: show convolution animation (starts with a slight delay)
-        setTimeout(function () {
+    function startLoadingLoop() {
+        if (loadingLoopActive) return;
+        loadingLoopActive = true;
+        loadingMinPassDone = false;
+        loadingStopRequested = false;
+        overlay.classList.add('active');
+
+        (function loop() {
+            if (!loadingLoopActive) return;
             runConvolutionAnim().then(function () {
-                hideOverlay();
+                if (!loadingLoopActive) return;
 
-                // Step 3: navigate — new page loads, and we animate it in
-                // Store flag so the new page knows to animate in
-                try { sessionStorage.setItem('page-transition', '1'); } catch (e) { }
-                window.location.href = targetUrl;
+                loadingMinPassDone = true;
+
+                // Minimum threshold: at least one full pass.
+                // After that, stop if loaded; otherwise keep looping.
+                if (loadingStopRequested || document.readyState === 'complete') {
+                    stopLoadingLoop();
+                    return;
+                }
+
+                setTimeout(loop, 120);
             });
-        }, 200);
+        })();
+    }
+
+    function doTransition(targetUrl) {
+        // Switch immediately to the loading indicator (no fixed-duration transition)
+        try { document.documentElement.classList.add('is-loading'); } catch (e) { }
+        startLoadingLoop();
+
+        // Navigate on the next paint so the overlay actually becomes visible.
+        requestAnimationFrame(function () {
+            window.location.href = targetUrl;
+        });
     }
 
     /* ── On page load: slide in if coming from transition ── */
@@ -256,6 +292,26 @@
             }
         }
     });
+
+    /* ── Initial page load: show loading animation ───────── */
+    if (document.documentElement.classList.contains('is-loading')) {
+        if (document.readyState === 'complete') {
+            clearLoadingFlag();
+            hideOverlay();
+        } else {
+            startLoadingLoop();
+
+            // Hide once the page is fully loaded (images, fonts, etc.)
+            window.addEventListener('load', function () {
+                requestStopLoading();
+            }, { once: true });
+
+            // Also handle bfcache restores
+            window.addEventListener('pageshow', function () {
+                requestStopLoading();
+            });
+        }
+    }
 
     /* ── Intercept nav clicks ─────────────────────────────── */
     document.addEventListener('click', function (e) {

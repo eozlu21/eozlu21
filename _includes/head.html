@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/main.css">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+  <script>
+    document.documentElement.classList.add('is-loading');
+  </script>
+  <script defer src="{{ site.url }}{{ site.baseurl }}/js/page-transition.js"></script>
+
   {% if jekyll.environment == 'production' %}
   {% include analytics.html %}
   {% endif %}

@@ -1,5 +1,5 @@
---- 
---- 
+---
+---
 
 @font-face {
 	font-family: 'SuisseIntl';
@@ -152,6 +152,12 @@ figcaption {
 	opacity: 1;
 }
 
+/* Show transition overlay during initial load as well */
+html.is-loading #page-transition-overlay {
+	pointer-events: all;
+	opacity: 1;
+}
+
 #page-transition-overlay canvas {
 	display: block;
 	border-radius: 16px;
@@ -180,7 +186,7 @@ pubtit {
 .container-fluid {
 	margin-right: auto;
 	margin-left: auto;
-	max-width: 1000px;
+	max-width: 1120px;
 }
 
 /* Home, News */
