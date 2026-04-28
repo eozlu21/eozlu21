@@ -184,8 +184,65 @@ pubtit {
 }
 
 /* Home, News */
+figure.home-affiliation-logos {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 28px;
+	margin-top: 1.25em;
+	margin-bottom: 0.5em;
+}
+
 #newsid p {
 	text-align: left;
+}
+
+.news-sidebar-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	margin-bottom: 1.15em;
+	text-align: left;
+}
+
+.news-sidebar-date {
+	flex: 0 0 3.25em;
+	font-weight: 600;
+	line-height: 1.25;
+	font-size: 0.95em;
+}
+
+.news-sidebar-body {
+	flex: 1;
+	min-width: 0;
+}
+
+.news-sidebar-body p:last-child {
+	margin-bottom: 0;
+}
+
+.news-archive-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 16px;
+	margin-bottom: 1.25em;
+	text-align: left;
+}
+
+.news-archive-date {
+	flex: 0 0 3.5em;
+	font-weight: 600;
+	line-height: 1.25;
+	font-size: 0.95em;
+}
+
+.news-archive-body {
+	flex: 1;
+	min-width: 0;
+}
+
+.news-archive-body p:last-child {
+	margin-bottom: 0;
 }
 
 #homeidtmp h1 {

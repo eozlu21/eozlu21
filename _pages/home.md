@@ -1,18 +1,20 @@
 ---
 title: "Allan Lab - Home"
 layout: homelay
-excerpt: "Allan Lab at Leiden University &rarr; LMU."
+excerpt: "Koç University & İş Bank Artificial Intelligence Center (KUIS AI)."
 sitemap: false
 permalink: /
 ---
 
-**News: Our group moved to the University of Munich (LMU)!** Join us! 
+## Koç University & İş Bank Artificial Intelligence Center (KUIS AI)
 
-We are a dynamic research group at [LMU physics](https://www.physik.lmu.de/en/index.html) and at the [Leiden Institute of Physics](http://www.physics.leidenuniv.nl/). 
+<b>Teaching machines to see, imagine, and reason about the visual world.</b>
 
-We have two overarching goals: first, 
-**to understand quantum materials**, including strange metals, high-temperature superconductors, and quantum critical electron matter. Second, **to make novel and useful materials** that never existed before, like possible room-temperature superconductors. 
-To achieve these goals, we develop new quantum sensing and quantum imaging instrumentation to obtain the key quantum mechanical degrees of freedom. We want to build the perfect instruments to answer the scientific questions we deem most important. 
+We are a computer vision and machine learning research group based at Koç University and Hacettepe University, building the next generation of AI systems that can perceive, generate, and reason across images, video, and language. Our work spans generative models for visual content creation and editing, multimodal foundation models that connect vision with natural language, and domain-specific applications in medical imaging, computational photography, and beyond.
+
+From synthesizing photorealistic worlds to probing what today's largest models truly understand, we pursue research that is both technically rigorous and grounded in real-world impact. Our group brings together PhD, MSc and undergraduate students, and collaborators from across the globe, and our work appears regularly at top venues including CVPR, ICCV, NeurIPS, ICLR, SIGGRAPH, and ACL.
+
+We welcome curious minds who want to shape what comes next.
 
 <div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover" >
     <!-- Menu -->
@@ -57,19 +59,7 @@ To achieve these goals, we develop new quantum sensing and quantum imaging instr
   </a>
 </div>
 
-
-We are currently building up our instruments right in the center of Munich, in the *Sommerfeldkeller*, where Sommerfeld and Röntgen worked. We will exchange ideas with world class groups working in quantum physics, cold-atom many-body physics, and 2d quantum materials. We are also a proud member of the [SuperC consortium](https://superc2033.com/our-team/).
-
-**We are looking for passionate new PhD students, Postdocs, and Master students to join the team** [(more info)](https://www.allanlab.org/vacancies) **!**
-
-
-
-
-
-<figure class="fifth">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/LMU_logo.png" style="width: 130px">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_Leiden.jpg" style="width: 140px">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Tschira.png" style="width: 150px">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_ERC.jpg" style="width: 100px">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/SuperC_logo.png" style="width: 100px">
+<figure class="fifth home-affiliation-logos">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/koc_logo2.png" alt="Koç University" style="height: 72px; width: auto; max-width: 220px; object-fit: contain">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/hacettepe_university_logo.svg" alt="Hacettepe University" style="height: 72px; width: auto; max-width: 220px; object-fit: contain">
 </figure>
