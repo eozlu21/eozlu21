@@ -7,11 +7,29 @@
 (function () {
     'use strict';
 
+    // Respect reduced-motion preference: no intercept, no loader.
+    try {
+        if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            try { document.documentElement.classList.remove('is-loading'); } catch (e) { }
+            return;
+        }
+    } catch (e) { }
+
     var GRID = 4;
     var KERNEL = 2;
-    var BG_COLOR = '#F9F9F7';
+
+    function cssVar(name, fallback) {
+        try {
+            var v = getComputedStyle(document.documentElement).getPropertyValue(name);
+            return (v && v.trim()) ? v.trim() : fallback;
+        } catch (e) {
+            return fallback;
+        }
+    }
+
+    var BG_COLOR = cssVar('--bg', '#F9F9F7');
     var CELL_COLOR = '#E0E0DC';
-    var KERN_COLOR = '#1A1A1A';
+    var KERN_COLOR = cssVar('--text', '#1A1A1A');
     var KERN_FILL = 'rgba(26, 26, 26, 0.15)';
     var ANIM_SIZE = 160;       // px — total canvas display size
     var DURATION = 350;       // ms for the convolution sweep
