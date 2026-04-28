@@ -1,5 +1,5 @@
 ---
-title: "Allan Lab - Home"
+title: "Cyberiad Lab - Home"
 layout: homelay
 excerpt: "Koç University & İş Bank Artificial Intelligence Center (KUIS AI)."
 sitemap: false

@@ -1,5 +1,5 @@
 ---
-title: "Allan Lab - Instrumente"
+title: "Cyberiad Lab - Instrumente"
 layout: textlay
 excerpt: "AOA"
 sitemap: false
