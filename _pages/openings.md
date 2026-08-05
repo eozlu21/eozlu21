@@ -2,7 +2,6 @@
 title: "Cyberiad Lab - Vacancies"
 layout: textlay
 excerpt: "Join the Cyberiad Lab"
-sitemap: false
 permalink: /vacancies
 ---
 

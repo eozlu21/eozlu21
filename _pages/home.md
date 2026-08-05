@@ -2,7 +2,6 @@
 title: "Cyberiad Lab - Home"
 layout: homelay
 excerpt: "Visual intelligence research at Koç University and Hacettepe University."
-sitemap: false
 permalink: /
 ---
 

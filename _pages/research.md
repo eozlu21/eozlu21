@@ -2,7 +2,6 @@
 title: "Visual Intelligence Lab – Research"
 layout: textlay
 excerpt: "Visual Intelligence Lab -- Research"
-sitemap: false
 permalink: /research/
 ---
 
