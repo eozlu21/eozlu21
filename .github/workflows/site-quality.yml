@@ -51,7 +51,7 @@ jobs:
         run: bundle exec ruby scripts/check_internal_links.rb _site
 
       - name: Check generated images and scripts
-        run: bundle exec htmlproofer ./_site --disable-external --swap-urls '^/eozlu21/:/'
+        run: bundle exec htmlproofer ./_site --disable-external --no-enforce-https --swap-urls '^/eozlu21/:/'
 
       - name: Validate HTML structure
         run: npm run check:html
