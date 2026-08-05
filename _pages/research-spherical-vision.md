@@ -5,13 +5,13 @@ layout: research_area
 permalink: /research/spherical-vision/
 excerpt: "Geometry-aware 360-degree vision, spatial audio, and visual attention research at Cyberiad Lab."
 lead: "We study how people and machines attend to immersive 360° scenes, combining spherical geometry, temporal context, and spatial audio."
-figure: /images/research/audio-visual-360-saliency.png
-figure_width: 1600
-figure_height: 1297
-figure_alt: "A 360-degree outdoor scene with sound-emitting objects and corresponding visual saliency maps."
-figure_caption: "Spatial audio directs attention toward sound-emitting objects in omnidirectional scenes. Figure from Spherical Vision Transformers for Audio-Visual Saliency Prediction in 360-Degree Videos."
+figure: /images/research/spherical-audio-fixations.png
+figure_width: 1320
+figure_height: 550
+figure_alt: "Three 360-degree scenes comparing the video frame, spatial audio energy, and viewer fixation density under ambisonic, mono, and muted audio."
+figure_caption: "Viewer fixation density changes with the audio condition. Across concert, driving, and conversation scenes, ambisonic spatial audio concentrates attention differently from mono or muted viewing. Figure from the Spherical Vision Transformers paper."
 figure_contain: true
-figure_kind: diagram
+figure_kind: panorama
 publication_titles:
   - "Spherical Vision Transformers for Audio-Visual Saliency Prediction in 360-Degree Videos"
   - "Spatio-Temporal Saliency Networks for Dynamic Saliency Prediction"

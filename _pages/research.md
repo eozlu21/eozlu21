@@ -44,7 +44,7 @@ permalink: /research/
 
   <a class="research-card" href="{{ '/research/spherical-vision/' | relative_url }}">
     <span class="research-card__number">04</span>
-    <img src="{{ '/images/research/audio-visual-360-saliency.png' | relative_url }}" alt="" width="1600" height="1297" loading="lazy">
+    <img src="{{ '/images/research/spherical-audio-fixations.png' | relative_url }}" alt="" width="1320" height="550" loading="lazy">
     <span class="research-card__body">
       <strong>Spherical visual intelligence</strong>
       <span>Geometry-aware 360° perception, visual attention, eye tracking, and spatial audio.</span>
