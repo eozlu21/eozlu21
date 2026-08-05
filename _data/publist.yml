@@ -204,7 +204,7 @@
   venue: "IEEE Trans. Medical Imaging 38(10) (2019)"
   year: 2019
   topic: "Computational Imaging"
-  pdf: http://www.icon.bilkent.edu.tr/docs/Dar-2019.pdf
+  pdf: https://www.icon.bilkent.edu.tr/docs/Dar-2019.pdf
   highlight: 0
 
 - title: "RecipeQA: A Challenge Dataset for Multimodal Comprehension of Cooking Recipes"
@@ -234,7 +234,7 @@
   venue: "EACL (2017)"
   year: 2017
   topic: "Multimodal Learning"
-  pdf: http://aclweb.org/anthology/E17-1019
+  pdf: https://aclanthology.org/E17-1019/
   highlight: 1
 
 - title: "TasvirEt: A Benchmark Dataset for Automatic Turkish Description Generation from Images"
@@ -244,7 +244,7 @@
   venue: "SIU (2016)"
   year: 2016
   topic: "Multimodal Learning"
-  project: http://semihyagcioglu.com/projects/tasviret
+  project: https://semihyagcioglu.com/projects/tasviret
   highlight: 0
 
 - title: "Learning to Generate Images of Outdoor Scenes from Attributes and Semantic Layouts"
@@ -274,7 +274,7 @@
   venue: "Eurographics (2016)"
   year: 2016
   topic: "Computational Imaging"
-  project: http://www.ceng.metu.edu.tr/~akyuz/files/eg2016/index.html
+  project: https://www.ceng.metu.edu.tr/~akyuz/files/eg2016/index.html
   highlight: 0
 
 - title: "Image Matting with KL-Divergence Based Sparse Sampling"
@@ -284,7 +284,7 @@
   venue: "ICCV (2015)"
   year: 2015
   topic: "Computational Imaging"
-  project: http://web.cs.hacettepe.edu.tr/~karacan/projects/klsparsematting/
+  project: https://web.cs.hacettepe.edu.tr/~karacan/projects/klsparsematting/
   highlight: 1
 
 - title: "A Distributed Representation Based Query Expansion Approach for Image Captioning"
@@ -294,7 +294,7 @@
   venue: "ACL (2015)"
   year: 2015
   topic: "Multimodal Learning"
-  project: http://www.semihyagcioglu.com/projects/imagecaptioning
+  project: https://www.semihyagcioglu.com/projects/imagecaptioning
   highlight: 1
 
 - title: "Predicting Memorability of Images Using Attention-driven Spatial Pooling and Image Semantics"
@@ -314,7 +314,7 @@
   venue: "Eurographics STAR (2015)"
   year: 2015
   topic: "Computational Imaging"
-  project: http://user.ceng.metu.edu.tr/~akyuz/files/eg2015/index.html
+  project: https://user.ceng.metu.edu.tr/~akyuz/files/eg2015/index.html
   highlight: 0
 
 - title: "Top down saliency estimation via superpixel-based discriminative dictionaries"
@@ -324,7 +324,7 @@
   venue: "BMVC (2014)"
   year: 2014
   topic: "Visual Perception"
-  project: http://vision.cs.hacettepe.edu.tr/~erdem/top_down_sal/index.html
+  project: https://vision.cs.hacettepe.edu.tr/~erdem/top_down_sal/index.html
   highlight: 0
 
 - title: "Structure-Preserving Image Smoothing via Region Covariances"
@@ -334,7 +334,7 @@
   venue: "SIGGRAPH Asia (2013)"
   year: 2013
   topic: "Computational Imaging"
-  project: http://web.cs.hacettepe.edu.tr/~karacan/projects/regcovsmoothing/
+  project: https://web.cs.hacettepe.edu.tr/~karacan/projects/regcovsmoothing/
   highlight: 1
 
 - title: "Visual saliency estimation by nonlinearly integrating features using region covariances"
@@ -344,8 +344,8 @@
   venue: "Journal of Vision (2013)"
   year: 2013
   topic: "Visual Perception"
-  pdf: http://jov.arvojournals.org/article.aspx?articleid=2121371
-  code: http://web.cs.hacettepe.edu.tr/~erkut/projects/CovSal/
+  pdf: https://jov.arvojournals.org/article.aspx?articleid=2121371
+  code: https://web.cs.hacettepe.edu.tr/~erkut/projects/CovSal/
   highlight: 0
 
 - title: "Graph Transduction as a Non-Cooperative Game"
@@ -356,5 +356,5 @@
   year: 2012
   topic: "Robotics & Machine Learning"
   pdf: https://direct.mit.edu/neco/article/24/3/700/7706
-  code: http://web.cs.hacettepe.edu.tr/~aykut/codes/gtg.m
+  code: https://web.cs.hacettepe.edu.tr/~aykut/codes/gtg.m
   highlight: 0
