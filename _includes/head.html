@@ -1,0 +1,31 @@
+<head>
+  {% assign meta_title = page.title | default: site.title %}
+  {% assign meta_description = page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 %}
+  {% assign canonical_url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+  {% assign social_image_url = site.social_image | prepend: site.baseurl | prepend: site.url %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ meta_title | escape }}</title>
+  <meta name="description" content="{{ meta_description | escape }}">
+
+  <meta property="og:title" content="{{ meta_title | escape }}">
+  <meta property="og:description" content="{{ meta_description | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <meta property="og:image" content="{{ social_image_url }}">
+  <meta property="og:site_name" content="{{ site.title | escape }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ meta_title | escape }}">
+  <meta name="twitter:description" content="{{ meta_description | escape }}">
+  <meta name="twitter:image" content="{{ social_image_url }}">
+
+  <meta name="baseurl" content="{{ site.baseurl }}">
+  <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/main.css">
+  <link rel="canonical" href="{{ canonical_url }}">
+
+  {% if jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  {% endif %}
+
+</head>

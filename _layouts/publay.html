@@ -1,0 +1,106 @@
+---
+layout: default
+---
+<div id="gridid" class="col-sm-12">
+
+<h1>Publications</h1>
+<p class="page-intro">Selected publications from the Cyberiad Lab across generative AI, multimodal learning, computational imaging, and visual intelligence.</p>
+
+{% assign publication_topics = "Generative Visual Media|Multimodal Learning|Computational Imaging|Visual Perception|Robotics & Machine Learning" | split: "|" %}
+<div class="pub-topic-filter" aria-label="Filter publications by research topic">
+  <button class="pub-topic-filter__button is-active" type="button" data-topic-filter="all" aria-pressed="true">All topics</button>
+  {% for topic in publication_topics %}
+  <button class="pub-topic-filter__button" type="button" data-topic-filter="{{ topic | slugify }}" aria-pressed="false">{{ topic }}</button>
+  {% endfor %}
+</div>
+<p class="pub-filter-status" aria-live="polite"></p>
+
+{% assign defined_years = "2026,2025,2024,2023,2022,2021,2020,2019,2018,2017,2016,2015,2014,2013,2012" | split: "," %}
+
+<nav class="pub-year-nav" aria-label="Publication years">
+{% for y in defined_years %}
+{% assign nav_year = y | plus: 0 %}
+{% assign nav_pubs = site.data.publist | where: "year", nav_year %}
+{% if nav_pubs.size > 0 %}<a href="#publications-{{ y }}">{{ y }}</a>{% endif %}
+{% endfor %}
+</nav>
+
+{% for y in defined_years %}
+{% assign year = y | plus: 0 %}
+{% assign year_pubs = site.data.publist | where: "year", year %}
+{% if year_pubs.size > 0 %}
+
+<section class="pub-year-section" id="publications-{{ y }}" aria-labelledby="publications-{{ y }}-title">
+  <h2 class="pub-year-heading" id="publications-{{ y }}-title">{{ year }}</h2>
+
+  <div class="row pub-year-grid">
+    {% for publi in year_pubs %}
+    <div class="col-sm-6 pub-card-column" data-publication-topic="{{ publi.topic | slugify }}">
+      <article class="pub-card">
+        <div class="pub-img">
+          {% if publi.image %}
+          <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" alt="{{ publi.title }}" />
+          {% else %}
+          <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/placeholder.png" alt="placeholder" />
+          {% endif %}
+        </div>
+        <div class="pub-text">
+          <div class="pub-title">{{ publi.title }}</div>
+          {% if publi.topic %}<div class="pub-topic">{{ publi.topic }}</div>{% endif %}
+          <div class="pub-authors">{{ publi.authors }}</div>
+          <div class="pub-venue">{{ publi.venue }}</div>
+          {% if publi.description %}<p class="pub-description">{{ publi.description }}</p>{% endif %}
+          <div class="pub-links">
+            {% if publi.arxiv %}<a href="{{ publi.arxiv }}" target="_blank" rel="noopener"><span class="pub-link-btn">arXiv</span></a>{% endif %}
+            {% if publi.pdf %}<a href="{{ publi.pdf }}" target="_blank" rel="noopener"><span class="pub-link-btn">PDF</span></a>{% endif %}
+            {% if publi.code %}<a href="{{ publi.code }}" target="_blank" rel="noopener"><span class="pub-link-btn">Code</span></a>{% endif %}
+            {% if publi.project %}<a href="{{ publi.project }}" target="_blank" rel="noopener"><span class="pub-link-btn">Project</span></a>{% endif %}
+            {% if publi.video %}<a href="{{ publi.video }}" target="_blank" rel="noopener"><span class="pub-link-btn">Video</span></a>{% endif %}
+          </div>
+        </div>
+      </article>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% endif %}
+{% endfor %}
+
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var buttons = document.querySelectorAll('[data-topic-filter]');
+  var cards = document.querySelectorAll('[data-publication-topic]');
+  var sections = document.querySelectorAll('.pub-year-section');
+  var status = document.querySelector('.pub-filter-status');
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      var selectedTopic = button.getAttribute('data-topic-filter');
+      var visibleCount = 0;
+
+      buttons.forEach(function (item) {
+        var active = item === button;
+        item.classList.toggle('is-active', active);
+        item.setAttribute('aria-pressed', active ? 'true' : 'false');
+      });
+
+      cards.forEach(function (card) {
+        var visible = selectedTopic === 'all' || card.getAttribute('data-publication-topic') === selectedTopic;
+        card.hidden = !visible;
+        if (visible) visibleCount += 1;
+      });
+
+      sections.forEach(function (section) {
+        section.hidden = !section.querySelector('[data-publication-topic]:not([hidden])');
+      });
+
+      status.textContent = selectedTopic === 'all'
+        ? 'Showing all ' + visibleCount + ' publications.'
+        : 'Showing ' + visibleCount + ' publications in ' + button.textContent + '.';
+    });
+  });
+});
+</script>

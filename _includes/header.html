@@ -1,0 +1,25 @@
+<nav class="navbar navbar-default navbar-fixed-top" aria-label="Primary navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+				data-target="#navbar-collapse-1" aria-expanded="false" aria-controls="navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+			<a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/"><span class="navbar-brand__mark" aria-hidden="true">C</span><span>Cyberiad Lab</span></a>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+			{% assign current_url = page.url | replace:'index.html','' %}
+			<ul class="nav navbar-nav">
+				<li class="{% if current_url == '/' %}active{% endif %}"><a href="{{ site.url }}{{ site.baseurl }}/">Home</a></li>
+				<li class="{% if current_url == '/team/' %}active{% endif %}"><a href="{{ site.url }}{{ site.baseurl }}/team">Team</a></li>
+				<li class="{% if current_url == '/vacancies' or current_url == '/vacancies/' %}active{% endif %}"><a href="{{ site.url }}{{ site.baseurl }}/vacancies">Vacancies</a></li>
+				<li class="{% if current_url == '/publications/' %}active{% endif %}"><a href="{{ site.url }}{{ site.baseurl }}/publications">Publications</a></li>
+				<li class="{% if current_url == '/research/' %}active{% endif %}"><a href="{{ site.url }}{{ site.baseurl }}/research">Research</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
