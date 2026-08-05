@@ -101,7 +101,7 @@ permalink: /
 <section markdown="0" class="home-join" aria-labelledby="home-join-title">
   <div>
     <p class="home-section__eyebrow">Work with us</p>
-    <h2 id="home-join-title">Help shape the next generation of visual AI.</h2>
+    <h2 id="home-join-title">Help shape the next generation of AI.</h2>
     <p>We welcome ambitious MSc and PhD students, postdoctoral researchers, research assistants, and visiting students.</p>
   </div>
   <a class="home-button home-button--primary" href="{{ site.url }}{{ site.baseurl }}/vacancies">Explore opportunities</a>
