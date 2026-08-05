@@ -1,11 +1,33 @@
-# Allan Lab Website
+# Cyberiad Lab website
 
-This is the website of our academic research group at Leiden University.
+The research-group website for the Cyberiad Lab, built with Jekyll and hosted on GitHub Pages.
 
-This website is powered by Jekyll and some Bootstrap, Bootwatch. We tried to make it simple yet adaptable, so that it is easy for you to use it as a template. Plese feel free to copy and modify for your own purposes.  You don't have to link to us or mention us (but of course we appreciate it).
+## Local development
 
-Go to *aboutwebsite.md*  to learn how to copy and modidy this page for your purpose. 
+```sh
+bundle install
+npm install
+bundle exec jekyll serve
+```
 
+The site is available at `http://127.0.0.1:4000/eozlu21/`.
 
-Copyright Allan Lab. Code released under the MIT License.
+## Quality checks
 
+The `Site quality` GitHub Actions workflow runs on pushes and pull requests to `gh-pages`. It validates the Jekyll build, publication images, generated internal links and assets, HTML structure, and WCAG 2 AA accessibility across the public pages.
+
+Run the deterministic checks locally with:
+
+```sh
+ruby scripts/check_publication_images.rb
+JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,.github/jekyll-ci.yml
+ruby scripts/check_internal_links.rb _site
+bundle exec htmlproofer ./_site --disable-external --swap-urls '^/eozlu21/:/'
+npm run check:html
+```
+
+The accessibility command expects a local Jekyll server on port 4000:
+
+```sh
+npm run check:accessibility
+```

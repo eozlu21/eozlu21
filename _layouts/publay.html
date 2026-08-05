@@ -7,10 +7,10 @@ layout: default
 <p class="page-intro">Selected publications from the Cyberiad Lab across generative AI, multimodal learning, computational imaging, and visual intelligence.</p>
 
 {% assign publication_topics = "Generative Visual Media|Multimodal Learning|Computational Imaging|Visual Perception|Robotics & Machine Learning" | split: "|" %}
-<div class="pub-topic-filter" aria-label="Filter publications by research topic">
+<div class="pub-topic-filter" role="group" aria-label="Filter publications by research topic">
   <button class="pub-topic-filter__button is-active" type="button" data-topic-filter="all" aria-pressed="true">All topics</button>
   {% for topic in publication_topics %}
-  <button class="pub-topic-filter__button" type="button" data-topic-filter="{{ topic | slugify }}" aria-pressed="false">{{ topic }}</button>
+  <button class="pub-topic-filter__button" type="button" data-topic-filter="{{ topic | slugify }}" aria-pressed="false">{{ topic | escape }}</button>
   {% endfor %}
 </div>
 <p class="pub-filter-status" aria-live="polite"></p>
@@ -47,7 +47,7 @@ layout: default
         </div>
         <div class="pub-text">
           <div class="pub-title">{{ publi.title }}</div>
-          {% if publi.topic %}<div class="pub-topic">{{ publi.topic }}</div>{% endif %}
+          {% if publi.topic %}<div class="pub-topic">{{ publi.topic | escape }}</div>{% endif %}
           <div class="pub-authors">{{ publi.authors }}</div>
           <div class="pub-venue">{{ publi.venue }}</div>
           {% if publi.description %}<p class="pub-description">{{ publi.description }}</p>{% endif %}
