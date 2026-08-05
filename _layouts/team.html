@@ -470,9 +470,16 @@ layout: default
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
   .alumni-list__item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
     font-size: 1.1rem;
     color: var(--muted-2);
     padding: 12px 18px;
@@ -483,6 +490,22 @@ layout: default
 
   .alumni-list__item:hover {
     background: rgba(51, 122, 183, 0.06);
+  }
+
+  .alumni-list__item a {
+    font-weight: 500;
+  }
+
+  .alumni-list__item span {
+    flex-shrink: 0;
+    font-size: 0.95rem;
+    color: var(--muted-3);
+  }
+
+  .alumni-directory {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
+    gap: 32px;
   }
 
   /* ── Separator ──────────────────────────────────────────── */
@@ -529,6 +552,10 @@ layout: default
     .team-card--pi .team-card__links {
       justify-content: center;
     }
+
+    .alumni-directory {
+      grid-template-columns: 1fr;
+    }
   }
 
   @media (max-width: 480px) {
@@ -548,6 +575,12 @@ layout: default
 
     .team-card--pi {
       padding: 20px 16px;
+    }
+
+    .alumni-list__item {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 2px;
     }
   }
 </style>
@@ -722,6 +755,40 @@ layout: default
         </div>
       </div>
       {% endif %}{% endfor %}
+    </div>
+  </section>
+
+  <hr class="team-divider">
+
+  <!-- ALUMNI -->
+  <section id="alumni" class="col-sm-12 team-section">
+    <h2 class="team-section__title">Alumni</h2>
+    <p class="team-section__subtitle">Former PhD and MSc students supervised by the Cyberiad Lab principal investigators.</p>
+
+    <div class="alumni-directory">
+      <section aria-labelledby="phd-alumni-title">
+        <h3 id="phd-alumni-title" class="alumni-list__heading">PhD alumni</h3>
+        <ul class="alumni-list__grid">
+          {% for alumnus in site.data.alumni %}{% if alumnus.degree == "PhD" %}
+          <li class="alumni-list__item">
+            <a href="{{ alumnus.url }}" target="_blank" rel="noopener">{{ alumnus.name }}</a>
+            <span>{{ alumnus.degree }} · {{ alumnus.year }}</span>
+          </li>
+          {% endif %}{% endfor %}
+        </ul>
+      </section>
+
+      <section aria-labelledby="msc-alumni-title">
+        <h3 id="msc-alumni-title" class="alumni-list__heading">MSc alumni</h3>
+        <ul class="alumni-list__grid">
+          {% for alumnus in site.data.alumni %}{% if alumnus.degree == "MSc" %}
+          <li class="alumni-list__item">
+            <a href="{{ alumnus.url }}" target="_blank" rel="noopener">{{ alumnus.name }}</a>
+            <span>{{ alumnus.degree }} · {{ alumnus.year }}</span>
+          </li>
+          {% endif %}{% endfor %}
+        </ul>
+      </section>
     </div>
   </section>
 
