@@ -1311,6 +1311,10 @@ figure.home-affiliation-logos {
 	color: #fff;
 }
 
+.research-index__principles h2 {
+	margin-top: 0;
+}
+
 .research-index__principle-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -1359,7 +1363,9 @@ figure.home-affiliation-logos {
 }
 
 .research-area__figure {
-	margin: 0 0 64px;
+	width: 100%;
+	max-width: 1080px;
+	margin: 0 auto 64px;
 	overflow: hidden;
 	border: 1px solid var(--border);
 	border-radius: var(--radius-lg);
@@ -1369,6 +1375,7 @@ figure.home-affiliation-logos {
 .research-area__figure img {
 	display: block;
 	width: 100%;
+	height: auto;
 	max-height: 660px;
 	margin: 0;
 	border-radius: 0;
@@ -1377,6 +1384,39 @@ figure.home-affiliation-logos {
 
 .research-area__figure--contain img {
 	object-fit: contain;
+}
+
+.research-area__figure--animation {
+	background: #f0f2f4;
+}
+
+.research-area__figure--animation img {
+	width: min(100%, 760px);
+	margin-right: auto;
+	margin-left: auto;
+	object-fit: contain;
+}
+
+.research-area__figure--panorama img {
+	max-height: 440px;
+	object-position: center;
+}
+
+.research-area__figure--diagram {
+	padding: 28px 28px 0;
+	background: #fff;
+}
+
+.research-area__figure--diagram img {
+	max-width: 900px;
+	max-height: 620px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.research-area__figure--diagram figcaption {
+	margin-right: -28px;
+	margin-left: -28px;
 }
 
 .research-area__figure figcaption {
@@ -1564,6 +1604,15 @@ figure.home-affiliation-logos {
 
 	.research-area__figure {
 		margin-bottom: 46px;
+	}
+
+	.research-area__figure--diagram {
+		padding: 12px 12px 0;
+	}
+
+	.research-area__figure--diagram figcaption {
+		margin-right: -12px;
+		margin-left: -12px;
 	}
 
 	.research-area__body {

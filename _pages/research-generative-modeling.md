@@ -12,6 +12,7 @@ figure_alt: "Animation showing an image becoming progressively noisier during th
 figure_caption: "The forward diffusion process gradually perturbs visual structure into noise, creating the learning problem that a generative model must reverse."
 figure_credit_url: https://aaronlou.com/blog/2024/reflected-diffusion/
 figure_animated: true
+figure_kind: animation
 publication_titles:
   - "LAMP: Language-Assisted Motion Planning for Controllable Video Generation"
   - "GaussianVideo: Efficient Video Representation via Hierarchical Gaussian Splatting"

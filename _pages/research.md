@@ -53,16 +53,16 @@ permalink: /research/
   </a>
 </section>
 
-<section class="research-index__principles">
-  <div>
-    <p class="research-area__eyebrow">How we work</p>
-    <h2>Models, evidence, and useful systems</h2>
-  </div>
-  <div class="research-index__principle-grid">
-    <div><strong>Structure</strong><p>We build representations that expose objects, motion, time, geometry, and language.</p></div>
-    <div><strong>Evaluation</strong><p>We design benchmarks that test specific capabilities instead of relying only on aggregate scores.</p></div>
-    <div><strong>Translation</strong><p>We connect foundational ideas to practical systems for media, sensing, and human-centered computing.</p></div>
-  </div>
+<section class="research-index__principles" markdown="0">
+<div class="research-index__principles-heading">
+<p class="research-area__eyebrow">How we work</p>
+<h2>Models, evidence, and useful systems</h2>
+</div>
+<div class="research-index__principle-grid">
+<div class="research-index__principle"><strong>Structure</strong><p>We build representations that expose objects, motion, time, geometry, and language.</p></div>
+<div class="research-index__principle"><strong>Evaluation</strong><p>We design benchmarks that test specific capabilities instead of relying only on aggregate scores.</p></div>
+<div class="research-index__principle"><strong>Translation</strong><p>We connect foundational ideas to practical systems for media, sensing, and human-centered computing.</p></div>
+</div>
 </section>
 
 ## Join us

@@ -11,6 +11,7 @@ figure_height: 615
 figure_alt: "GaussianVideo illustration showing coherent Gaussian trajectories across successive video frames."
 figure_caption: "GaussianVideo models coherent motion in the underlying Gaussians, enabling continuous and efficient video reconstruction. Figure adapted from the authors’ paper."
 figure_contain: true
+figure_kind: panorama
 publication_titles:
   - "GaussianVideo: Efficient Video Representation via Hierarchical Gaussian Splatting"
   - "VidStyleODE: Disentangled Video Editing via StyleGAN and NeuralODEs"

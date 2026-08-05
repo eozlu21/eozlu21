@@ -12,6 +12,7 @@ figure_alt: "Animation showing a denoising process recovering a structured image
 figure_caption: "Iterative denoising offers a useful visual analogy for multimodal reasoning: evidence is integrated step by step until a coherent interpretation emerges."
 figure_credit_url: https://aaronlou.com/blog/2024/reflected-diffusion/
 figure_animated: true
+figure_kind: animation
 publication_titles:
   - "Sequential Compositional Generalization in Multimodal Models"
   - "ViLMA: A Zero-Shot Benchmark for Linguistic and Temporal Grounding in Video-Language Models"

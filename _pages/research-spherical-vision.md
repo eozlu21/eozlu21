@@ -11,6 +11,7 @@ figure_height: 1297
 figure_alt: "A 360-degree outdoor scene with sound-emitting objects and corresponding visual saliency maps."
 figure_caption: "Spatial audio directs attention toward sound-emitting objects in omnidirectional scenes. Figure from Spherical Vision Transformers for Audio-Visual Saliency Prediction in 360-Degree Videos."
 figure_contain: true
+figure_kind: diagram
 publication_titles:
   - "Spherical Vision Transformers for Audio-Visual Saliency Prediction in 360-Degree Videos"
   - "Spatio-Temporal Saliency Networks for Dynamic Saliency Prediction"
