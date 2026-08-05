@@ -1,0 +1,65 @@
+---
+layout: default
+---
+<article class="research-area">
+  <nav class="research-area__breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ '/research/' | relative_url }}">Research</a>
+    <span aria-hidden="true">/</span>
+    <span>{{ page.short_title | default: page.title }}</span>
+  </nav>
+
+  <header class="research-area__hero">
+    <p class="research-area__eyebrow">Research area</p>
+    <h1>{{ page.title }}</h1>
+    <p class="research-area__lead">{{ page.lead }}</p>
+  </header>
+
+  <figure class="research-area__figure{% if page.figure_contain %} research-area__figure--contain{% endif %}">
+    <img src="{{ page.figure | relative_url }}" alt="{{ page.figure_alt }}" width="{{ page.figure_width }}" height="{{ page.figure_height }}" {% unless page.figure_animated %}loading="eager"{% endunless %} decoding="async">
+    <figcaption>{{ page.figure_caption }}{% if page.figure_credit_url %} <a href="{{ page.figure_credit_url }}" rel="noopener">Figure source</a>.{% endif %}</figcaption>
+  </figure>
+
+  <div class="research-area__body">
+    {{ content }}
+  </div>
+
+  {% if page.publication_titles %}
+  <section class="research-area__publications" aria-labelledby="selected-publications">
+    <div class="research-area__section-heading">
+      <p class="research-area__eyebrow">From the lab</p>
+      <h2 id="selected-publications">Selected publications</h2>
+    </div>
+    <div class="research-publication-list">
+      {% for publication_title in page.publication_titles %}
+        {% assign publication = site.data.publist | where: "title", publication_title | first %}
+        {% if publication %}
+        <article class="research-publication">
+          <img src="{{ '/images/pubpic/' | append: publication.image | relative_url }}" alt="" loading="lazy" width="240" height="150">
+          <div>
+            <p class="research-publication__meta">{{ publication.year }} · {{ publication.venue }}</p>
+            <h3>{{ publication.title }}</h3>
+            <p>{{ publication.description }}</p>
+            <p class="research-publication__links">
+              {% if publication.project %}<a href="{{ publication.project }}">Project</a>{% endif %}
+              {% if publication.arxiv %}<a href="{{ publication.arxiv }}">Paper</a>{% elsif publication.pdf %}<a href="{{ publication.pdf }}">Paper</a>{% endif %}
+              {% if publication.code %}<a href="{{ publication.code }}">Code</a>{% endif %}
+            </p>
+          </div>
+        </article>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <a class="research-area__all-publications" href="{{ '/publications/' | relative_url }}">Browse all publications <span aria-hidden="true">→</span></a>
+  </section>
+  {% endif %}
+
+  <nav class="research-area__next" aria-label="Research areas">
+    <p>Explore another direction</p>
+    <div>
+      <a href="{{ '/research/generative-modeling/' | relative_url }}">Generative modeling</a>
+      <a href="{{ '/research/multimodal-reasoning/' | relative_url }}">Multimodal reasoning</a>
+      <a href="{{ '/research/structured-video/' | relative_url }}">Structured video</a>
+      <a href="{{ '/research/spherical-vision/' | relative_url }}">Spherical vision</a>
+    </div>
+  </nav>
+</article>

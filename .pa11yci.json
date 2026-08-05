@@ -16,6 +16,10 @@
     "http://127.0.0.1:4000/eozlu21/vacancies",
     "http://127.0.0.1:4000/eozlu21/publications/",
     "http://127.0.0.1:4000/eozlu21/research/",
+    "http://127.0.0.1:4000/eozlu21/research/generative-modeling/",
+    "http://127.0.0.1:4000/eozlu21/research/multimodal-reasoning/",
+    "http://127.0.0.1:4000/eozlu21/research/structured-video/",
+    "http://127.0.0.1:4000/eozlu21/research/spherical-vision/",
     "http://127.0.0.1:4000/eozlu21/allnews.html"
   ]
 }

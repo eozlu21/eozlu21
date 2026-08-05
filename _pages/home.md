@@ -24,22 +24,28 @@ permalink: /
     </div>
   </div>
   <div class="home-theme-grid">
-    <a class="home-theme-card" href="{{ site.url }}{{ site.baseurl }}/research/#generative-models-for-controllable-image-and-video-creation">
+    <a class="home-theme-card" href="{{ site.url }}{{ site.baseurl }}/research/generative-modeling/">
       <span class="home-theme-card__number">01</span>
       <h3>Generative visual intelligence</h3>
       <p>Controllable image and video creation, editing, motion planning, and neural scene representations.</p>
       <span class="home-theme-card__arrow" aria-hidden="true">↗</span>
     </a>
-    <a class="home-theme-card" href="{{ site.url }}{{ site.baseurl }}/research/#multimodal-learning-and-visionlanguage-integration">
+    <a class="home-theme-card" href="{{ site.url }}{{ site.baseurl }}/research/multimodal-reasoning/">
       <span class="home-theme-card__number">02</span>
       <h3>Multimodal reasoning</h3>
       <p>Vision-language models, compositional generalization, temporal grounding, and behavioral evaluation.</p>
       <span class="home-theme-card__arrow" aria-hidden="true">↗</span>
     </a>
-    <a class="home-theme-card" href="{{ site.url }}{{ site.baseurl }}/research/#low-light-event-based-and-hyperspectral-vision">
+    <a class="home-theme-card" href="{{ site.url }}{{ site.baseurl }}/research/structured-video/">
       <span class="home-theme-card__number">03</span>
-      <h3>Computational imaging</h3>
-      <p>Low-light, event-based, hyperspectral, immersive, and medical imaging under challenging conditions.</p>
+      <h3>Structured video</h3>
+      <p>Continuous, compact representations for coherent motion, reconstruction, resampling, and editing.</p>
+      <span class="home-theme-card__arrow" aria-hidden="true">↗</span>
+    </a>
+    <a class="home-theme-card" href="{{ site.url }}{{ site.baseurl }}/research/spherical-vision/">
+      <span class="home-theme-card__number">04</span>
+      <h3>Spherical visual intelligence</h3>
+      <p>Geometry-aware 360° perception, visual attention, eye tracking, and spatial audio.</p>
       <span class="home-theme-card__arrow" aria-hidden="true">↗</span>
     </a>
   </div>
