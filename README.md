@@ -21,7 +21,7 @@ Run the deterministic checks locally with:
 ```sh
 ruby scripts/check_publication_images.rb
 JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,.github/jekyll-ci.yml
-ruby scripts/check_internal_links.rb _site
+bundle exec ruby scripts/check_internal_links.rb _site
 bundle exec htmlproofer ./_site --disable-external --swap-urls '^/eozlu21/:/'
 npm run check:html
 ```
