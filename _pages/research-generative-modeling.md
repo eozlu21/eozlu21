@@ -9,7 +9,13 @@ figure: /images/research/diffusion-forward.webp
 figure_width: 520
 figure_height: 184
 figure_alt: "Animation showing an image becoming progressively noisier during the forward diffusion process."
-figure_caption: "The forward diffusion process gradually perturbs visual structure into noise, creating the learning problem that a generative model must reverse."
+figure_label: "Forward process · perturbation"
+figure_secondary: /images/research/diffusion-denoising.webp
+figure_secondary_width: 520
+figure_secondary_height: 183
+figure_secondary_alt: "Animation showing the reverse diffusion process recovering a structured image from noise."
+figure_secondary_label: "Reverse process · denoising"
+figure_caption: "Diffusion models learn to reverse a stochastic perturbation process: structure is gradually destroyed in the forward direction and recovered through iterative denoising during generation."
 figure_credit_url: https://aaronlou.com/blog/2024/reflected-diffusion/
 figure_animated: true
 figure_kind: animation

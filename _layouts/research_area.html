@@ -14,8 +14,21 @@ layout: default
     <p class="research-area__lead">{{ page.lead }}</p>
   </header>
 
-  <figure class="research-area__figure{% if page.figure_contain %} research-area__figure--contain{% endif %}{% if page.figure_kind %} research-area__figure--{{ page.figure_kind }}{% endif %}">
+  <figure class="research-area__figure{% if page.figure_contain %} research-area__figure--contain{% endif %}{% if page.figure_kind %} research-area__figure--{{ page.figure_kind }}{% endif %}{% if page.figure_secondary %} research-area__figure--pair{% endif %}">
+    {% if page.figure_secondary %}
+    <div class="research-area__figure-grid">
+      <div class="research-area__figure-panel">
+        <p>{{ page.figure_label }}</p>
+        <img src="{{ page.figure | relative_url }}" alt="{{ page.figure_alt }}" width="{{ page.figure_width }}" height="{{ page.figure_height }}" decoding="async">
+      </div>
+      <div class="research-area__figure-panel">
+        <p>{{ page.figure_secondary_label }}</p>
+        <img src="{{ page.figure_secondary | relative_url }}" alt="{{ page.figure_secondary_alt }}" width="{{ page.figure_secondary_width }}" height="{{ page.figure_secondary_height }}" decoding="async">
+      </div>
+    </div>
+    {% else %}
     <img src="{{ page.figure | relative_url }}" alt="{{ page.figure_alt }}" width="{{ page.figure_width }}" height="{{ page.figure_height }}" {% unless page.figure_animated %}loading="eager"{% endunless %} decoding="async">
+    {% endif %}
     <figcaption>{{ page.figure_caption }}{% if page.figure_credit_url %} <a href="{{ page.figure_credit_url }}" rel="noopener">Figure source</a>.{% endif %}</figcaption>
   </figure>
 

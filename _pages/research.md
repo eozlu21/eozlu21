@@ -24,7 +24,7 @@ permalink: /research/
 
   <a class="research-card" href="{{ '/research/multimodal-reasoning/' | relative_url }}">
     <span class="research-card__number">02</span>
-    <img src="{{ '/images/research/diffusion-denoising.webp' | relative_url }}" alt="" width="520" height="183">
+    <img src="{{ '/images/research/vilma-overview.png' | relative_url }}" alt="" width="1600" height="900">
     <span class="research-card__body">
       <strong>Multimodal reasoning</strong>
       <span>Grounding, compositional generalization, and evaluation across vision and language.</span>

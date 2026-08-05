@@ -5,14 +5,12 @@ layout: research_area
 permalink: /research/multimodal-reasoning/
 excerpt: "Vision-language learning, compositional generalization, grounding, and multimodal evaluation at Cyberiad Lab."
 lead: "We investigate whether models can connect vision and language beyond surface correlations—grounding concepts in time, composing known ideas, and explaining what they observe."
-figure: /images/research/diffusion-denoising.webp
-figure_width: 520
-figure_height: 183
-figure_alt: "Animation showing a denoising process recovering a structured image from noise."
-figure_caption: "Iterative denoising offers a useful visual analogy for multimodal reasoning: evidence is integrated step by step until a coherent interpretation emerges."
-figure_credit_url: https://aaronlou.com/blog/2024/reflected-diffusion/
-figure_animated: true
-figure_kind: animation
+figure: /images/research/vilma-overview.png
+figure_width: 1600
+figure_height: 900
+figure_alt: "ViLMA benchmark overview showing video frames of paper being folded, followed by a basic proficiency test and a harder temporal change-of-state test."
+figure_caption: "ViLMA evaluates video–language models in two stages: a proficiency test first confirms the prerequisite concept, then a controlled main test probes deeper temporal understanding. Figure from the ViLMA paper."
+figure_kind: diagram
 publication_titles:
   - "Sequential Compositional Generalization in Multimodal Models"
   - "ViLMA: A Zero-Shot Benchmark for Linguistic and Temporal Grounding in Video-Language Models"
