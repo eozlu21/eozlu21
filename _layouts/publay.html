@@ -17,13 +17,14 @@ layout: default
 
 {% assign defined_years = "2026,2025,2024,2023,2022,2021,2020,2019,2018,2017,2016,2015,2014,2013,2012" | split: "," %}
 
-<nav class="pub-year-nav" aria-label="Publication years">
+<nav class="pub-year-nav" aria-label="Publication years" aria-describedby="pub-year-nav-hint">
 {% for y in defined_years %}
 {% assign nav_year = y | plus: 0 %}
 {% assign nav_pubs = site.data.publist | where: "year", nav_year %}
 {% if nav_pubs.size > 0 %}<a href="#publications-{{ y }}">{{ y }}</a>{% endif %}
 {% endfor %}
 </nav>
+<p class="pub-year-nav__hint" id="pub-year-nav-hint">Swipe horizontally to see more years.</p>
 
 {% for y in defined_years %}
 {% assign year = y | plus: 0 %}

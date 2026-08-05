@@ -252,6 +252,8 @@ figcaption {
 
 .navbar-default .navbar-toggle {
 	border-color: var(--border-strong);
+	min-width: 44px;
+	min-height: 44px;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -584,6 +586,13 @@ figure.home-affiliation-logos {
 	font-weight: 500;
 }
 
+.home-featured-card__links a,
+.home-section__heading > a {
+	display: inline-flex;
+	align-items: center;
+	min-height: 44px;
+}
+
 @media (max-width: 991px) {
 	.home-theme-grid {
 		grid-template-columns: 1fr;
@@ -798,6 +807,7 @@ figure.home-affiliation-logos {
 }
 
 .pub-topic-filter__button {
+	min-height: 44px;
 	padding: 8px 14px;
 	border: 1px solid var(--border-strong);
 	border-radius: 999px;
@@ -858,16 +868,28 @@ figure.home-affiliation-logos {
 	border-radius: 999px;
 	background: rgba(247, 247, 244, 0.9);
 	backdrop-filter: blur(10px);
+	-webkit-overflow-scrolling: touch;
+	scrollbar-width: thin;
 }
 
 .pub-year-nav a {
 	flex: 0 0 auto;
-	padding: 7px 13px;
+	display: inline-flex;
+	align-items: center;
+	min-height: 44px;
+	padding: 8px 13px;
 	border-radius: 999px;
 	color: var(--muted-2);
 	font-size: 13px;
 	font-weight: 500;
 	text-decoration: none;
+}
+
+.pub-year-nav__hint {
+	display: none;
+	margin: -24px 10px 28px;
+	color: var(--muted);
+	font-size: 12px;
 }
 
 .pub-year-nav a:hover,
@@ -966,11 +988,16 @@ figure.home-affiliation-logos {
 }
 
 .pub-links a {
+	display: inline-flex;
+	align-items: center;
+	min-height: 44px;
 	text-decoration: none;
 }
 
 .pub-link-btn {
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
+	min-height: 44px;
 	padding: 6px 10px;
 	margin-right: 6px;
 	margin-bottom: 6px;
@@ -994,8 +1021,28 @@ figure.home-affiliation-logos {
 }
 
 @media (max-width: 768px) {
+	.pub-topic-filter__button {
+		padding: 10px 14px;
+	}
+
+	.pub-year-nav {
+		padding-right: 34px;
+		-webkit-mask-image: linear-gradient(to right, #000 0, #000 calc(100% - 36px), transparent 100%);
+		mask-image: linear-gradient(to right, #000 0, #000 calc(100% - 36px), transparent 100%);
+	}
+
+	.pub-year-nav__hint {
+		display: block;
+	}
+
 	.pub-card {
 		flex-direction: column;
+	}
+
+	.pub-title,
+	.pub-authors,
+	.pub-description {
+		overflow-wrap: anywhere;
 	}
 
 	.pub-card .pub-img {
@@ -1118,6 +1165,26 @@ figure.home-affiliation-logos {
 	.pub-year-nav {
 		top: 56px;
 		border-radius: 14px;
+	}
+}
+
+@media (max-width: 360px) {
+	.home-hero h1,
+	.content-page > h1:first-child,
+	#gridid > h1:first-child {
+		font-size: 34px;
+		line-height: 1.08;
+	}
+
+	.home-hero__lead,
+	.content-page > p:first-of-type,
+	.page-intro {
+		font-size: 17px;
+	}
+
+	.home-people,
+	.home-join {
+		padding: 20px;
 	}
 }
 

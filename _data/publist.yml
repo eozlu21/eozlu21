@@ -218,7 +218,6 @@
   highlight: 1
 
 - title: "Spatio-Temporal Saliency Networks for Dynamic Saliency Prediction"
-  image: saliency-networks.gif
   description: We propose spatio-temporal saliency networks for predicting dynamic visual saliency in videos.
   authors: Cagdas Bak, Aysun Kocak, Erkut Erdem, Aykut Erdem
   venue: "IEEE Trans. Multimedia 20(7) (2018)"
