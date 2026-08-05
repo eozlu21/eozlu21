@@ -16,6 +16,7 @@ lab_url: "https://ai.ku.edu.tr/"
 github_url: "https://github.com/cyberiada"
 scholar_url: "https://scholar.google.com/citations?user=-xA1_OAAAAAJ&hl=en"
 social_image: "/images/og-cyberiad.png"
+google_site_verification: "2hkt0TcwQGZJP6DrOC87C-pYccroUS-_nHrDuFCii6c"
 
 plugins:
   - jekyll-sitemap
